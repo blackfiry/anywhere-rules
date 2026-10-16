@@ -1,0 +1,12 @@
+#!name=小熊油耗VIP
+#!desc=小熊油耗解锁VIP（Anywhere 模块）
+
+[Rule]
+
+[URL Rewrite]
+
+[Script]
+小熊油耗 = type=http-response,pattern=^https?:\/\/www\.xiaoxiongyouhao\.com\/api\/vip\/index\.php$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xiaoxiongyouhao.js
+
+[MITM]
+hostname = www.xiaoxiongyouhao.com

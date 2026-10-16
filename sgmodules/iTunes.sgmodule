@@ -1,0 +1,12 @@
+#!name=iTunes解锁
+#!desc=iTunes verifyReceipt 内购解锁（Anywhere 模块）
+
+[Rule]
+
+[URL Rewrite]
+
+[Script]
+iTunes = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
+
+[MITM]
+hostname = buy.itunes.apple.com

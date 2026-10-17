@@ -6,7 +6,7 @@ Anywhere 代理自用订阅：MITM 重写规则集（.amrs）与分流规则集�
 
 ## MITM 重写（.amrs）
 
-均为转换器原始输出的静态快照（2026-10-16 起）。
+除 RevenueCat（动态订阅，每次更新拉取最新转换结果）外，均为转换器原始输出的静态快照（2026-10-16 起）。
 
 | 名称 | 订阅链接 |
 | --- | --- |
@@ -15,7 +15,7 @@ Anywhere 代理自用订阅：MITM 重写规则集（.amrs）与分流规则集�
 | 看理想VIP解锁 | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/kanlixiang-vip.amrs |
 | iTunes系列解锁 | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/mitm/itunes-series-unlock.amrs |
 | Reven | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/mitm/reven.amrs |
-| RevenueCat解锁 | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/revenuecat-unlock.amrs |
+| RevenueCat解锁（动态） | https://worker.anywhere-converter.ccwu.cc/sub/mitm.amrs?url=https%3A%2F%2Fraw.githubusercontent.com%2Fblackfiry%2Fanywhere-rules%2Fmain%2Fsgmodules%2Freheji.sgmodule&name=RevenueCat%E8%A7%A3%E9%94%81&ruleSetRouting=default |
 | One | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/mitm/one.amrs |
 | App解锁合集 | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/app-unlock-collection.amrs |
 | 扫描全能王 | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/mitm/camscanner.amrs |

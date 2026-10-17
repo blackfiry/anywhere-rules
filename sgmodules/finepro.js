@@ -1,1 +1,181 @@
-LyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgrohJrmnKzlkI3np7DvvJpGaW5lIFByb+S8muWRmOino+mUgQpWZXJzaW9uICA6IHYxLjEuMArmm7TmlrDml7bpl7TvvJoyMDI2LTEwLTE3CuS9nOiAhe+8mkN1cnRpbnAxMTgKUGxhdGZvcm0gOiBRdWFudHVtdWx0IFggLyBMb29uIC8gU3VyZ2UK6ISa5pys5Yqf6IO977ya6Kej6ZSBIEZpbmUgUHJvIOS8muWRmArkvb/nlKjor7TmmI7vvJpNSVRNIOmHjeWGmSBzdWJzY3JpYmVycyDlkowgcmVjZWlwdHMg5o6l5Y+j5ZON5bqU77yM5omT5byAIEFwcCDljbPlj6/nlJ/mlYgKCltyZXdyaXRlX2xvY2FsXQoKXmh0dHBzPzpcL1wvYXBpXC5yYy1iYWNrdXBcLmNvbVwvdjFcLyhzdWJzY3JpYmVyc1wvW14vXSt8cmVjZWlwdHMpJCB1cmwgc2NyaXB0LXJlc3BvbnNlLWJvZHkgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2N1cnRpbnAxMTgvU2NyaXB0aHViL21haW4vc2NyaXB0cy9maW5lcHJvL2ZpbmVwcm8uanMKClttaXRtXcKgCgpob3N0bmFtZSA9IGFwaS5yYy1iYWNrdXAuY29tCgoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLwoKLy8gPT09PT09PT09PSDkuInnq6/lubPlj7Dor4bliKsgPT09PT09PT09PQp2YXIgaXNRWCA9IHR5cGVvZiAkdGFzayAhPT0gInVuZGVmaW5lZCI7CnZhciBpc0xvb24gPSB0eXBlb2YgJGxvb24gIT09ICJ1bmRlZmluZWQiOwp2YXIgaXNTdXJnZSA9IHR5cGVvZiAkaHR0cENsaWVudCAhPT0gInVuZGVmaW5lZCIgJiYgIWlzTG9vbjsKCi8vID09PT09PT09PT0gTG9nZ2VyIOaooeWdlyA9PT09PT09PT09CnZhciBMb2dnZXIgPSB7CiAgc2NyaXB0U3RhcnQ6IGZ1bmN0aW9uIChuYW1lLCB2ZXJzaW9uLCBwbGF0Zm9ybSwgcmVxdWVzdFR5cGUpIHsKICAgIHZhciBub3cgPSBuZXcgRGF0ZSgpOwogICAgdmFyIHBhZCA9IGZ1bmN0aW9uIChuKSB7IHJldHVybiBTdHJpbmcobikucGFkU3RhcnQoMiwgIjAiKTsgfTsKICAgIHZhciB0aW1lID0gbm93LmdldEZ1bGxZZWFyKCkgKyAiLSIgKyBwYWQobm93LmdldE1vbnRoKCkgKyAxKSArICItIiArIHBhZChub3cuZ2V0RGF0ZSgpKSArICIgIiArIHBhZChub3cuZ2V0SG91cnMoKSkgKyAiOiIgKyBwYWQobm93LmdldE1pbnV0ZXMoKSkgKyAiOiIgKyBwYWQobm93LmdldFNlY29uZHMoKSk7CiAgICBjb25zb2xlLmxvZygi8J+agCBTY3JpcHQgU3RhcnQiKTsKICAgIGNvbnNvbGUubG9nKCJUaW1lICAgICA6ICIgKyB0aW1lKTsKICAgIGNvbnNvbGUubG9nKCJWZXJzaW9uICA6ICIgKyB2ZXJzaW9uICsgIiB8ICIgKyBwbGF0Zm9ybSArICIgfCAiICsgcmVxdWVzdFR5cGUpOwogICAgY29uc29sZS5sb2coIlBsYXRmb3JtIDogIiArIHBsYXRmb3JtKTsKICAgIGNvbnNvbGUubG9nKCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0iKTsKICB9LAoKICBmaWVsZDogZnVuY3Rpb24gKGxhYmVsLCB2YWx1ZSkgewogICAgdmFyIHBhZGRpbmcgPSAiICAgICAgICAgICAgICAiOwogICAgdmFyIGtleSA9IChsYWJlbCArIHBhZGRpbmcpLnN1YnN0cmluZygwLCAxNCk7CiAgICBjb25zb2xlLmxvZyhrZXkgKyAiOiAiICsgdmFsdWUpOwogIH0sCgogIHN0YXR1czogZnVuY3Rpb24gKGljb24sIHRleHQpIHsgdGhpcy5maWVsZCgiU3RhdHVzIiwgaWNvbiArICIgIiArIHRleHQpOyB9LAogIG1lc3NhZ2U6IGZ1bmN0aW9uICh2YWx1ZSkgeyB0aGlzLmZpZWxkKCJNZXNzYWdlIiwgdmFsdWUpOyB9LAogIHNlcGFyYXRvcjogZnVuY3Rpb24gKCkgeyBjb25zb2xlLmxvZygiLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIik7IH0sCiAgc3VtbWFyeTogZnVuY3Rpb24gKHRvdGFsLCBzdWNjZXNzLCBmYWlsZWQsIHJlc3VsdCkgewogICAgY29uc29sZS5sb2coIvCfk4ogU3VtbWFyeSIpOwogICAgY29uc29sZS5sb2coIlRvdGFsICAgICAgOiAiICsgdG90YWwpOwogICAgY29uc29sZS5sb2coIlN1Y2Nlc3MgICAgOiAiICsgc3VjY2Vzcyk7CiAgICBjb25zb2xlLmxvZygiRmFpbGVkICAgICA6ICIgKyBmYWlsZWQpOwogICAgY29uc29sZS5sb2coIvCfjq8gUmVzdWx0ICA6ICIgKyByZXN1bHQpOwogICAgY29uc29sZS5sb2coIkVuZCIpOwogIH0KfTsKCi8vID09PT09PT09PT0g5bel5YW35Ye95pWwID09PT09PT09PT0KdmFyIFNDUklQVF9OQU1FID0gIkZpbmUgUHJvIjsKdmFyIFNDUklQVF9WRVJTSU9OID0gInYxLjEuMCI7CnZhciBFTlRJVExFTUVOVF9JRCA9ICJGaW5lIFBybyI7CnZhciBQUk9EVUNUX0lEID0gImZpbmVfc3Vic2NyaXB0aW9uX3llYXJseSI7CnZhciBFWFBJUkVTX0RBVEUgPSAiMjA5OS0xMi0zMFQyMzo1OTo1OVoiOwp2YXIgRkFMTEJBQ0tfVVNFUl9JRCA9ICIkUkNBbm9ueW1vdXNJRDowMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCI7CgpmdW5jdGlvbiBnZXRQbGF0Zm9ybSgpIHsKICBpZiAoaXNRWCkgcmV0dXJuICJRdWFudHVtdWx0IFgiOwogIGlmIChpc0xvb24pIHJldHVybiAiTG9vbiI7CiAgaWYgKGlzU3VyZ2UpIHJldHVybiAiU3VyZ2UiOwogIHJldHVybiAiVW5rbm93biI7Cn0KCmZ1bmN0aW9uIGlzT2JqZWN0KHZhbHVlKSB7CiAgcmV0dXJuIHZhbHVlICE9PSBudWxsICYmIHR5cGVvZiB2YWx1ZSA9PT0gIm9iamVjdCIgJiYgIUFycmF5LmlzQXJyYXkodmFsdWUpOwp9CgpmdW5jdGlvbiBnZXRSZXNwb25zZUJvZHkoKSB7CiAgcmV0dXJuIHR5cGVvZiAkcmVzcG9uc2UgIT09ICJ1bmRlZmluZWQiICYmICRyZXNwb25zZS5ib2R5ID8gJHJlc3BvbnNlLmJvZHkgOiAiIjsKfQoKZnVuY3Rpb24gcGFyc2VSZXNwb25zZShyYXcpIHsKICBpZiAoIXJhdykgcmV0dXJuIHt9OwoKICB0cnkgewogICAgdmFyIHBhcnNlZCA9IEpTT04ucGFyc2UocmF3KTsKICAgIHJldHVybiBpc09iamVjdChwYXJzZWQpID8gcGFyc2VkIDogbnVsbDsKICB9IGNhdGNoIChlcnJvcikgewogICAgcmV0dXJuIG51bGw7CiAgfQp9CgpmdW5jdGlvbiBnZXRQdXJjaGFzZURhdGUoc3Vic2NyaXB0aW9uLCBub3cpIHsKICBpZiAoaXNPYmplY3Qoc3Vic2NyaXB0aW9uKSAmJiBzdWJzY3JpcHRpb24ucHVyY2hhc2VfZGF0ZSkgewogICAgcmV0dXJuIHN1YnNjcmlwdGlvbi5wdXJjaGFzZV9kYXRlOwogIH0KICByZXR1cm4gbm93Owp9CgpmdW5jdGlvbiBidWlsZFJlc3BvbnNlKHJhdykgewogIHZhciBub3cgPSBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCk7CiAgdmFyIGJvZHkgPSBwYXJzZVJlc3BvbnNlKHJhdyk7CiAgaWYgKCFib2R5KSByZXR1cm4gbnVsbDsKCiAgdmFyIHN1YnNjcmliZXIgPSBpc09iamVjdChib2R5LnN1YnNjcmliZXIpID8gYm9keS5zdWJzY3JpYmVyIDoge307CiAgdmFyIGVudGl0bGVtZW50cyA9IGlzT2JqZWN0KHN1YnNjcmliZXIuZW50aXRsZW1lbnRzKSA/IHN1YnNjcmliZXIuZW50aXRsZW1lbnRzIDoge307CiAgdmFyIHN1YnNjcmlwdGlvbnMgPSBpc09iamVjdChzdWJzY3JpYmVyLnN1YnNjcmlwdGlvbnMpID8gc3Vic2NyaWJlci5zdWJzY3JpcHRpb25zIDoge307CiAgdmFyIGV4aXN0aW5nU3Vic2NyaXB0aW9uID0gaXNPYmplY3Qoc3Vic2NyaXB0aW9uc1tQUk9EVUNUX0lEXSkgPyBzdWJzY3JpcHRpb25zW1BST0RVQ1RfSURdIDoge307CiAgdmFyIHB1cmNoYXNlRGF0ZSA9IGdldFB1cmNoYXNlRGF0ZShleGlzdGluZ1N1YnNjcmlwdGlvbiwgbm93KTsKCiAgZW50aXRsZW1lbnRzW0VOVElUTEVNRU5UX0lEXSA9IHsKICAgIGV4cGlyZXNfZGF0ZTogRVhQSVJFU19EQVRFLAogICAgcHJvZHVjdF9pZGVudGlmaWVyOiBQUk9EVUNUX0lELAogICAgcHVyY2hhc2VfZGF0ZTogcHVyY2hhc2VEYXRlCiAgfTsKCiAgc3Vic2NyaXB0aW9uc1tQUk9EVUNUX0lEXSA9IHsKICAgIGV4cGlyZXNfZGF0ZTogRVhQSVJFU19EQVRFLAogICAgb3JpZ2luYWxfcHVyY2hhc2VfZGF0ZTogZXhpc3RpbmdTdWJzY3JpcHRpb24ub3JpZ2luYWxfcHVyY2hhc2VfZGF0ZSB8fCBwdXJjaGFzZURhdGUsCiAgICBwdXJjaGFzZV9kYXRlOiBwdXJjaGFzZURhdGUsCiAgICBvd25lcnNoaXBfdHlwZTogZXhpc3RpbmdTdWJzY3JpcHRpb24ub3duZXJzaGlwX3R5cGUgfHwgIlBVUkNIQVNFRCIsCiAgICBwZXJpb2RfdHlwZTogZXhpc3RpbmdTdWJzY3JpcHRpb24ucGVyaW9kX3R5cGUgfHwgIm5vcm1hbCIsCiAgICBzdG9yZTogZXhpc3RpbmdTdWJzY3JpcHRpb24uc3RvcmUgfHwgImFwcF9zdG9yZSIsCiAgICBpc19zYW5kYm94OiBmYWxzZQogIH07CgogIHN1YnNjcmliZXIuZW50aXRsZW1lbnRzID0gZW50aXRsZW1lbnRzOwogIHN1YnNjcmliZXIuc3Vic2NyaXB0aW9ucyA9IHN1YnNjcmlwdGlvbnM7CiAgc3Vic2NyaWJlci5ub25fc3Vic2NyaXB0aW9ucyA9IGlzT2JqZWN0KHN1YnNjcmliZXIubm9uX3N1YnNjcmlwdGlvbnMpID8gc3Vic2NyaWJlci5ub25fc3Vic2NyaXB0aW9ucyA6IHt9OwogIHN1YnNjcmliZXIub3RoZXJfcHVyY2hhc2VzID0gaXNPYmplY3Qoc3Vic2NyaWJlci5vdGhlcl9wdXJjaGFzZXMpID8gc3Vic2NyaWJlci5vdGhlcl9wdXJjaGFzZXMgOiB7fTsKICBzdWJzY3JpYmVyLm9yaWdpbmFsX2FwcF91c2VyX2lkID0gc3Vic2NyaWJlci5vcmlnaW5hbF9hcHBfdXNlcl9pZCB8fCBGQUxMQkFDS19VU0VSX0lEOwogIHN1YnNjcmliZXIuZmlyc3Rfc2VlbiA9IHN1YnNjcmliZXIuZmlyc3Rfc2VlbiB8fCBub3c7CiAgc3Vic2NyaWJlci5sYXN0X3NlZW4gPSBub3c7CiAgc3Vic2NyaWJlci5vcmlnaW5hbF9wdXJjaGFzZV9kYXRlID0gc3Vic2NyaWJlci5vcmlnaW5hbF9wdXJjaGFzZV9kYXRlIHx8IHB1cmNoYXNlRGF0ZTsKICBzdWJzY3JpYmVyLm9yaWdpbmFsX2FwcGxpY2F0aW9uX3ZlcnNpb24gPSBzdWJzY3JpYmVyLm9yaWdpbmFsX2FwcGxpY2F0aW9uX3ZlcnNpb24gfHwgIjUwMDEiOwoKICBpZiAodHlwZW9mIHN1YnNjcmliZXIubWFuYWdlbWVudF91cmwgPT09ICJ1bmRlZmluZWQiKSB7CiAgICBzdWJzY3JpYmVyLm1hbmFnZW1lbnRfdXJsID0gbnVsbDsKICB9CgogIGJvZHkucmVxdWVzdF9kYXRlID0gbm93OwogIGJvZHkucmVxdWVzdF9kYXRlX21zID0gRGF0ZS5ub3coKTsKICBib2R5LnN1YnNjcmliZXIgPSBzdWJzY3JpYmVyOwogIHJldHVybiBib2R5Owp9CgpmdW5jdGlvbiBkb25lKGJvZHkpIHsKICAkZG9uZSh7CiAgICBzdGF0dXM6IDIwMCwKICAgIGhlYWRlcnM6IHsKICAgICAgIkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uOyBjaGFyc2V0PXV0Zi04IiwKICAgICAgIkNhY2hlLUNvbnRyb2wiOiAibm8tc3RvcmUsIG5vLWNhY2hlLCBtdXN0LXJldmFsaWRhdGUiLAogICAgICAiUHJhZ21hIjogIm5vLWNhY2hlIgogICAgfSwKICAgIGJvZHk6IHR5cGVvZiBib2R5ID09PSAic3RyaW5nIiA/IGJvZHkgOiBKU09OLnN0cmluZ2lmeShib2R5KQogIH0pOwp9CgpmdW5jdGlvbiBydW4oKSB7CiAgTG9nZ2VyLnNjcmlwdFN0YXJ0KFNDUklQVF9OQU1FLCBTQ1JJUFRfVkVSU0lPTiwgZ2V0UGxhdGZvcm0oKSwgIlJlc3BvbnNlIik7CiAgdmFyIHJhdyA9IGdldFJlc3BvbnNlQm9keSgpOwogIHZhciBib2R5ID0gYnVpbGRSZXNwb25zZShyYXcpOwoKICBpZiAoIWJvZHkpIHsKICAgIExvZ2dlci5zdGF0dXMoIuKdjCIsICJKU09OIHBhcnNlIGVycm9yIik7CiAgICBMb2dnZXIuc2VwYXJhdG9yKCk7CiAgICBMb2dnZXIuc3VtbWFyeSgxLCAwLCAxLCAiSW52YWxpZCByZXNwb25zZSIpOwogICAgcmV0dXJuIGRvbmUocmF3KTsKICB9CgogIExvZ2dlci5zdGF0dXMoIuKchSIsICJWSVAgdW5sb2NrZWQiKTsKICBMb2dnZXIubWVzc2FnZSgiRXhwaXJlIGF0ICIgKyBFWFBJUkVTX0RBVEUpOwogIExvZ2dlci5zZXBhcmF0b3IoKTsKICBMb2dnZXIuc3VtbWFyeSgxLCAxLCAwLCAiU3VjY2VzcyIpOwogIHJldHVybiBkb25lKGJvZHkpOwp9Cgp0cnkgewogIHJ1bigpOwp9IGNhdGNoIChlcnJvcikgewogIGNvbnNvbGUubG9nKCJmYXRhbDoiLCBlcnJvcik7CiAgZG9uZShnZXRSZXNwb25zZUJvZHkoKSk7Cn0K
+/******************************
+脚本名称：Fine Pro会员解锁
+Version  : v1.1.0
+更新时间：2026-10-17
+作者：Curtinp118
+Platform : Quantumult X / Loon / Surge
+脚本功能：解锁 Fine Pro 会员
+使用说明：MITM 重写 subscribers 和 receipts 接口响应，打开 App 即可生效
+
+[rewrite_local]
+
+^https?:\/\/api\.rc-backup\.com\/v1\/(subscribers\/[^/]+|receipts)$ url script-response-body https://raw.githubusercontent.com/curtinp118/Scripthub/main/scripts/finepro/finepro.js
+
+[mitm] 
+
+hostname = api.rc-backup.com
+
+*******************************/
+
+// ========== 三端平台识别 ==========
+var isQX = typeof $task !== "undefined";
+var isLoon = typeof $loon !== "undefined";
+var isSurge = typeof $httpClient !== "undefined" && !isLoon;
+
+// ========== Logger 模块 ==========
+var Logger = {
+  scriptStart: function (name, version, platform, requestType) {
+    var now = new Date();
+    var pad = function (n) { return String(n).padStart(2, "0"); };
+    var time = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate()) + " " + pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds());
+    console.log("🚀 Script Start");
+    console.log("Time     : " + time);
+    console.log("Version  : " + version + " | " + platform + " | " + requestType);
+    console.log("Platform : " + platform);
+    console.log("------------------------------------");
+  },
+
+  field: function (label, value) {
+    var padding = "              ";
+    var key = (label + padding).substring(0, 14);
+    console.log(key + ": " + value);
+  },
+
+  status: function (icon, text) { this.field("Status", icon + " " + text); },
+  message: function (value) { this.field("Message", value); },
+  separator: function () { console.log("------------------------------------"); },
+  summary: function (total, success, failed, result) {
+    console.log("📊 Summary");
+    console.log("Total      : " + total);
+    console.log("Success    : " + success);
+    console.log("Failed     : " + failed);
+    console.log("🎯 Result  : " + result);
+    console.log("End");
+  }
+};
+
+// ========== 工具函数 ==========
+var SCRIPT_NAME = "Fine Pro";
+var SCRIPT_VERSION = "v1.1.0";
+var ENTITLEMENT_ID = "Fine Pro";
+var PRODUCT_ID = "fine_subscription_yearly";
+var EXPIRES_DATE = "2099-12-30T23:59:59Z";
+var FALLBACK_USER_ID = "$RCAnonymousID:00000000000000000000000000000000";
+
+function getPlatform() {
+  if (isQX) return "Quantumult X";
+  if (isLoon) return "Loon";
+  if (isSurge) return "Surge";
+  return "Unknown";
+}
+
+function isObject(value) {
+  return value !== null && typeof value === "object" && !Array.isArray(value);
+}
+
+function getResponseBody() {
+  return typeof $response !== "undefined" && $response.body ? $response.body : "";
+}
+
+function parseResponse(raw) {
+  if (!raw) return {};
+
+  try {
+    var parsed = JSON.parse(raw);
+    return isObject(parsed) ? parsed : null;
+  } catch (error) {
+    return null;
+  }
+}
+
+function getPurchaseDate(subscription, now) {
+  if (isObject(subscription) && subscription.purchase_date) {
+    return subscription.purchase_date;
+  }
+  return now;
+}
+
+function buildResponse(raw) {
+  var now = new Date().toISOString();
+  var body = parseResponse(raw);
+  if (!body) return null;
+
+  var subscriber = isObject(body.subscriber) ? body.subscriber : {};
+  var entitlements = isObject(subscriber.entitlements) ? subscriber.entitlements : {};
+  var subscriptions = isObject(subscriber.subscriptions) ? subscriber.subscriptions : {};
+  var existingSubscription = isObject(subscriptions[PRODUCT_ID]) ? subscriptions[PRODUCT_ID] : {};
+  var purchaseDate = getPurchaseDate(existingSubscription, now);
+
+  entitlements[ENTITLEMENT_ID] = {
+    expires_date: EXPIRES_DATE,
+    product_identifier: PRODUCT_ID,
+    purchase_date: purchaseDate
+  };
+
+  subscriptions[PRODUCT_ID] = {
+    expires_date: EXPIRES_DATE,
+    original_purchase_date: existingSubscription.original_purchase_date || purchaseDate,
+    purchase_date: purchaseDate,
+    ownership_type: existingSubscription.ownership_type || "PURCHASED",
+    period_type: existingSubscription.period_type || "normal",
+    store: existingSubscription.store || "app_store",
+    is_sandbox: false
+  };
+
+  subscriber.entitlements = entitlements;
+  subscriber.subscriptions = subscriptions;
+  subscriber.non_subscriptions = isObject(subscriber.non_subscriptions) ? subscriber.non_subscriptions : {};
+  subscriber.other_purchases = isObject(subscriber.other_purchases) ? subscriber.other_purchases : {};
+  subscriber.original_app_user_id = subscriber.original_app_user_id || FALLBACK_USER_ID;
+  subscriber.first_seen = subscriber.first_seen || now;
+  subscriber.last_seen = now;
+  subscriber.original_purchase_date = subscriber.original_purchase_date || purchaseDate;
+  subscriber.original_application_version = subscriber.original_application_version || "5001";
+
+  if (typeof subscriber.management_url === "undefined") {
+    subscriber.management_url = null;
+  }
+
+  body.request_date = now;
+  body.request_date_ms = Date.now();
+  body.subscriber = subscriber;
+  return body;
+}
+
+function done(body) {
+  $done({
+    status: 200,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Cache-Control": "no-store, no-cache, must-revalidate",
+      "Pragma": "no-cache"
+    },
+    body: typeof body === "string" ? body : JSON.stringify(body)
+  });
+}
+
+function run() {
+  Logger.scriptStart(SCRIPT_NAME, SCRIPT_VERSION, getPlatform(), "Response");
+  var raw = getResponseBody();
+  var body = buildResponse(raw);
+
+  if (!body) {
+    Logger.status("❌", "JSON parse error");
+    Logger.separator();
+    Logger.summary(1, 0, 1, "Invalid response");
+    return done(raw);
+  }
+
+  Logger.status("✅", "VIP unlocked");
+  Logger.message("Expire at " + EXPIRES_DATE);
+  Logger.separator();
+  Logger.summary(1, 1, 0, "Success");
+  return done(body);
+}
+
+try {
+  run();
+} catch (error) {
+  console.log("fatal:", error);
+  done(getResponseBody());
+}

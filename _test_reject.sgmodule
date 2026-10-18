@@ -1,5 +1,0 @@
-#!name=_test_reject
-[rewrite_local]
-^https:\/\/thor\.weidian\.com\/ares\/home\.splash\/ url reject-200
-[mitm]
-hostname = thor.weidian.com

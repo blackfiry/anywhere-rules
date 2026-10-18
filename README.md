@@ -17,11 +17,10 @@ Anywhere 代理自用订阅：MITM 重写规则集（.amrs）与分流规则集�
 | Reven | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/mitm/reven.amrs |
 | RevenueCat解锁（动态） | https://worker.anywhere-converter.ccwu.cc/sub/mitm.amrs?url=https%3A%2F%2Fraw.githubusercontent.com%2Fblackfiry%2Fanywhere-rules%2Fmain%2Fsgmodules%2Freheji.sgmodule&name=RevenueCat%E8%A7%A3%E9%94%81&ruleSetRouting=default |
 | One | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/mitm/one.amrs |
-| App解锁合集 | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/app-unlock-collection.amrs |
 | 扫描全能王 | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/mitm/camscanner.amrs |
 | Fine Pro会员解锁 | https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/mitm/fine-pro-vip.amrs |
 
-> 看理想、RevenueCat、App解锁合集因文件较大存放在仓库根目录，功能无差别。
+> 看理想因文件较大存放在仓库根目录，功能无差别；RevenueCat 为动态订阅。
 
 ## 分流规则（.arrs）
 

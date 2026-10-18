@@ -34,5 +34,5 @@
 
 ## 源地址未知的
 
-- app-unlock-collection.amrs（App解锁合集）：原始 .sgmodule 源地址未存档
+- app-unlock-collection.amrs（App解锁合集）：已于 2026-10-18 删除（原始 .sgmodule 源地址未存档）
 - mitm/ 下其余模块（iTunes解锁、小熊油耗VIP、iTunes系列解锁、Reven、One、扫描全能王、看理想VIP）：早于建档，无上游记录

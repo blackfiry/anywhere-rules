@@ -30,6 +30,7 @@
 | reven.amrs（Reven） | https://reven.jsforbaby.workers.dev/reven/reven.sgmodule |
 | one.amrs（One） | https://one-api.zzxu.de/one/one.sgmodule |
 | kanlixiang-vip.amrs（看理想VIP解锁） | https://raw.githubusercontent.com/ios151/Rewrite/refs/heads/main/klx.sgmodule |
+| camscanner.amrs（扫描全能王） | https://yfamilys.com/module/camscanner.sgmodule |
 
 ## 分流规则（routing/）
 
@@ -41,4 +42,3 @@
 ## 源地址未知的
 
 - app-unlock-collection.amrs（App解锁合集）：已于 2026-10-18 删除（原始 .sgmodule 源地址未存档）
-- mitm/ 下其余模块（扫描全能王）：早于建档，无上游记录

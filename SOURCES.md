@@ -26,6 +26,7 @@
 | fine-pro-vip.amrs（Fine Pro会员解锁） | https://raw.githubusercontent.com/curtinp118/Scripthub/main/scripts/finepro/finepro.js |
 | itunes-series-unlock.amrs（iTunes系列解锁） | https://reven.jsforbaby.workers.dev/reven/iTunes.sgmodule |
 | xiaoxiong-youhao-vip.amrs（小熊油耗VIP） | https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xiaoxiongyouhao.js |
+| itunes-unlock.amrs（iTunes解锁） | https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js |
 
 ## 分流规则（routing/）
 
@@ -37,4 +38,4 @@
 ## 源地址未知的
 
 - app-unlock-collection.amrs（App解锁合集）：已于 2026-10-18 删除（原始 .sgmodule 源地址未存档）
-- mitm/ 下其余模块（iTunes解锁、Reven、One、扫描全能王、看理想VIP）：早于建档，无上游记录
+- mitm/ 下其余模块（Reven、One、扫描全能王、看理想VIP）：早于建档，无上游记录

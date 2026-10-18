@@ -11,6 +11,7 @@
 | qonversion.amod（qonversion合集） | https://raw.githubusercontent.com/chxm1023/Rewrite/main/qonversion.js |
 | apphud.amod（apphud合集） | https://raw.githubusercontent.com/chxm1023/Rewrite/main/apphud.js |
 | snow.amod（SNOW解锁） | https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js |
+| yuredirect.amod（Yu9191链接重定向） | https://raw.githubusercontent.com/ios151/Rewrite/main/YuRedirect.sgmodule |
 
 ## 动态订阅（转换器实时转换）
 

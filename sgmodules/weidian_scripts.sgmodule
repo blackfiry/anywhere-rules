@@ -1,0 +1,10 @@
+#!name=微店去广告脚本
+#!desc=配置修改 + 精简钱包区
+#!author=可莉
+
+[Script]
+微店配置修改 = type=http-response, pattern=^https://thor\.weidian\.com/appconf/getAppConfig/, script-path=https://kelee.one/Resource/JavaScript/Weidian/getAppConfig.js, requires-body=true, binary-body-mode=true
+微店精简钱包区 = type=http-response, pattern=^https://thor\.weidian\.com/wgs/wallet\.query\.order\.entrance/, script-path=https://kelee.one/Resource/JavaScript/Weidian/wallet.js, requires-body=true, binary-body-mode=true
+
+[MITM]
+hostname = %APPEND% thor.weidian.com

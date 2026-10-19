@@ -1,0 +1,9 @@
+#!name=Goodnotes6
+#!desc=解锁订阅如有侵权联系我删除
+#!author=iu
+
+[MITM]
+hostname = %APPEND% isi.csan.goodnotes.com, *.isi.csan.goodnotes.com
+
+[URL Rewrite]
+^https://isi\.csan\.goodnotes.*/v1/subscribers/[a-f0-9\-]{36}$ https://goodenotes6.lovebabyforever.workers.dev/

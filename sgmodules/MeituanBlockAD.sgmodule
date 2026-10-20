@@ -1,0 +1,15 @@
+#!name=美团与美团外卖去广告
+#!desc=上游：fmz200/wool_scripts｜拦截美团/美团外卖开屏广告：开屏接口返回空 JSON、图片素材返回 1px 透明图。由 Anywhere AMRS 版转换。
+#!category=去广告
+
+[Script]
+MeituanBlockAD-1 = type=http-request, pattern=^https?://wmapi\.meituan\.com/api/v7/(?:loadInfo|openscreen|startpicture)\?, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/meituanblockad.js, argument={}
+MeituanBlockAD-2 = type=http-request, pattern=^https?://(?:s3plus|flowplus)\.meituan\.net/v\d/\w+/linglong/\w+\.(?:gif|jpg|mp4), script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/meituanblockad.js, argument=gif
+MeituanBlockAD-3 = type=http-request, pattern=^https?://img\.meituan\.net/bizad/bizad_brandCpt_\d+\.jpg, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/meituanblockad.js, argument=gif
+MeituanBlockAD-4 = type=http-request, pattern=^https?://img\.meituan\.net/goodsawardpic/[a-f0-9]+\.png\.webp, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/meituanblockad.js, argument=gif
+MeituanBlockAD-5 = type=http-request, pattern=^https?://s3plus\.meituan\.net/ocean-blk-index/index/blk_conf_73\.json(?:\?|$), script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/meituanblockad.js, argument={}
+MeituanBlockAD-6 = type=http-request, pattern=^https?://s3plus\.meituan\.net/v1/mss_\w+/(?:brandcpt-vedio|waimai-alita)/\w+\.zip$, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/meituanblockad.js, argument={}
+MeituanBlockAD-7 = type=http-request, pattern=^http://59\.82\.113\.10/amdc/mobileDispatch\?appkey=213807&, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/meituanblockad.js, argument={}
+
+[MITM]
+hostname = %APPEND% wmapi.meituan.com, img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, 59.82.113.10

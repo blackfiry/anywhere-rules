@@ -1,0 +1,63 @@
+#!name=应用开屏去广告
+#!desc=来源：@ddgksf2013 · @chikacya｜净化多款应用的开屏广告。由 Anywhere AMOD 版转换：46 条拦截返回空 200、3 条返回空 404、5 条正文替换（财新/神州租车/微信公众号）、1 条优酷域名 REJECT。
+#!category=去广告
+
+[Script]
+StartupAds-01 = type=http-request, pattern=^https://gab\.122\.gov\.cn/eapp/m/sysquery, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-02 = type=http-request, pattern=^https?://acs\.m\.taobao\.com/gw/mtop\.alibaba\.advertisementservice\.getadv/, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-03 = type=http-request, pattern=^https?://acs\.m\.taobao\.com/gw/mtop\.alibaba\.cbu\.app\.homepage\.startup, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-04 = type=http-request, pattern=^http://.*babytree\.com/(plough\.do|go_search/api/mobile_search_new/get_multi_search_default_keywords), script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-05 = type=http-request, pattern=^http://m\.meitun\.com/newapi/router/topic/hometptf/feedRecommend, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-06 = type=http-request, pattern=^https?://emdcadvertise\.eastmoney\.com/infoService/v\d, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-07 = type=http-request, pattern=^https?://cn-acs\.m\.cainiao\.com/gw/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(show|mshow)\.cn/, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-08 = type=http-request, pattern=^https?://iyes\.youku\.com/uts/v\d/start, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-09 = type=http-request, pattern=^https?://api3\.cls\.cn/v1/boot/ad, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-10 = type=http-request, pattern=^https?://pinggai.*caixin\.com/s\?z=caixin, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-11 = type=http-request, pattern=^https?://api\.douban\.com/v2/app_ads/splash, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-12 = type=http-request, pattern=^https?://api\.douban\.com/b.*/common_ads\?.*, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-13 = type=http-request, pattern=^https?://[a-z]+\.eastmoney\.com/infoService/, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-14 = type=http-request, pattern=^https?://emdcadvise\.eastmoney\.com/infoAdviseService/, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-15 = type=http-request, pattern=^https?://elemecdn.com/.+/sitemap, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-16 = type=http-request, pattern=^https?://fuss10.elemecdn.com/.+/w/640/h/\d{3,4}, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-17 = type=http-request, pattern=^https?://fuss10.elemecdn.com/.+/w/750/h/\d{3,4}, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-18 = type=http-request, pattern=^https?://fuss10.elemecdn.com/.+.mp4, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-19 = type=http-request, pattern=^https?://www1.elecfans.com/www/delivery/, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-20 = type=http-request, pattern=^https://acs\.m\.taobao\.com/gw/mtop\.fliggy\.crm\.screen\.allresource, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-21 = type=http-request, pattern=^https://acs\.m\.taobao\.com/gw/mtop\.fliggy\.crm\.screen\.availablesplashstrategies, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-22 = type=http-request, pattern=^https?://fuwu\.nhsa\.gov\.cn/ebus/fuwu/api/base/cms/iep/web/cms/hmpgcfg/queryAppHmpgCfgByApp, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-23 = type=http-request, pattern=^https?://acs\.m\.taobao\.com/gw/mtop\.wdk\.render\.querysinglepage, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-24 = type=http-request, pattern=^https?://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.querysinglepage, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-25 = type=http-request, pattern=^https?://list-app-m\.i4\.cn.*adinfo\.xhtml, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-26 = type=http-request, pattern=^https?://yunbusiness\.ccb\.com/clp_service/txCtrl\?txcode=A3341A00(2|9), script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-27 = type=http-request, pattern=^https?://adv\.ccb\.com/ebda/ctm_adv, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-28 = type=http-request, pattern=^https?://home\.mi\.com/cgi-op/api/v\d/recommendation, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-29 = type=http-request, pattern=^https?://3g\.csair\.com/CSMBP/bookProcess/homepopup/queryAdvertisement, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-30 = type=http-request, pattern=^https?://adproxy.autohome.com.cn/AdvertiseService/, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-31 = type=http-request, pattern=^https?://app2.autoimg.cn/appdfs/, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-32 = type=http-request, pattern=^https?://api\.qbb6\.com/ad/, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-33 = type=http-request, pattern=^https?://acs\.m\.taobao\.com/gw/mtop\.film\.mtopadvertiseapi\.queryadvertise/, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-34 = type=http-request, pattern=^https?://tcmobileapi\.17usoft\.com/appindexnew/index/getappindexconfig, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-35 = type=http-request, pattern=^https?://guide-acs\.m\.taobao\.com/gw/mtop\.taobao\.wireless\.home\.splash\.awesome\.get, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-36 = type=http-request, pattern=^https?://guide-acs\.m\.taobao\.com/gw/mtop\.fc\.resource\.tacdata\.get, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-37 = type=http-request, pattern=^https?://www\.zjyilin\.com/hykweb//index/openImg, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-38 = type=http-request, pattern=^https?://mp\.weixin\.qq\.com/mp/relatedsearchword, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-39 = type=http-request, pattern=^https://ma-adx\.ctrip\.com/_ma\.gif, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-40 = type=http-request, pattern=^https://mbd\.baidu\.com/newspage/api/getmobads\?page\=landingshare, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-41 = type=http-request, pattern=^https://api\.xiachufang\.com/v\d/ad/, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-42 = type=http-request, pattern=^https?://api\.m\.mi\.com/v1/app/start, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-43 = type=http-request, pattern=^https?://marketing-aibox\.v\.mitvos\.com/advertise/splash, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-44 = type=http-request, pattern=^https?://info\.mina\.mi\.com/advertise/splash, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-45 = type=http-request, pattern=^https?://acs\.m\.goofish\.com/gw/mtop.*splash\.ads, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-46 = type=http-request, pattern=^https://cn-app\.narwaltech\.com/(operate/(cactivity/listByResourceIds|appPosition/listSplash)|app-user-device-server/v\d/user-device/getTips), script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=200
+StartupAds-47 = type=http-request, pattern=^https?://api\.vistopia\.com\.cn/api/v\d/home/advertisement, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=404
+StartupAds-48 = type=http-request, pattern=^https?://p0\.pipi\.cn/mediaplus/maoyantong_ads_fe/(0fa3345c|2erwqe2f)\w+.jpg\?imageMogr2/quality/85, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=404
+StartupAds-49 = type=http-request, pattern=^https?://vod\.pipi\.cn/\w+/\w+/f0\.mp4\?__reqTraceID=.*?optimus_code=10, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, argument=404
+财新广告日期 = type=http-response, pattern=^https?://gg\.caixin\.com/s\?z=caixin&op=1&c=3362, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, requires-body=true
+神州租车营销 = type=http-response, pattern=^https?://apiproxy\.zuche\.com/resource/cardes/toufang/marketing, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, requires-body=true
+微信公众号广告 = type=http-response, pattern=^https?://mp\.weixin\.qq\.com/mp/getappmsgad, script-path=https://raw.githubusercontent.com/blackfiry/anywhere-rules/main/sgmodules/startupads.js, requires-body=true
+
+[Rule]
+DOMAIN,iyes.youku.com,REJECT
+
+[MITM]
+hostname = %APPEND% 3g.csair.com, acs-m.freshippo.com, acs.m.goofish.com, acs.m.taobao.com, adproxy.autohome.com.cn, adv.ccb.com, api.douban.com, api.m.mi.com, api.qbb6.com, api.vistopia.com.cn, api.xiachufang.com, api3.cls.cn, apiproxy.zuche.com, app2.autoimg.cn, caixin.com, cn-acs.m.cainiao.com, cn-app.narwaltech.com, eastmoney.com, elemecdn.com, emdcadvertise.eastmoney.com, emdcadvise.eastmoney.com, fuss10.elemecdn.com, fuwu.nhsa.gov.cn, gab.122.gov.cn, gg.caixin.com, guide-acs.m.taobao.com, home.mi.com, info.mina.mi.com, iyes.youku.com, list-app-m.i4.cn, m.meitun.com, ma-adx.ctrip.com, marketing-aibox.v.mitvos.com, mbd.baidu.com, mp.weixin.qq.com, p0.pipi.cn, tcmobileapi.17usoft.com, vod.pipi.cn, www.zjyilin.com, www1.elecfans.com, yunbusiness.ccb.com

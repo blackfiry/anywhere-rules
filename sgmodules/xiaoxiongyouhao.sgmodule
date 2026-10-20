@@ -1,12 +1,8 @@
 #!name=小熊油耗VIP
-#!desc=小熊油耗解锁VIP（Anywhere 模块）
-
-[Rule]
-
-[URL Rewrite]
+#!desc=小熊油耗解锁VIP。上游：89996462/Quantumult-X（彭于晏），脚本直接引用上游地址，上游更新自动生效。2026-10-20 按上游原版重转：去掉旧版规则结尾多余的 $ 锚点（接口带查询参数时旧版匹配不上）。
 
 [Script]
-小熊油耗 = type=http-response,pattern=^https?:\/\/www\.xiaoxiongyouhao\.com\/api\/vip\/index\.php$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xiaoxiongyouhao.js
+小熊油耗 = type=http-response, pattern=^https?://www\.xiaoxiongyouhao\.com/api/vip/index\.php, requires-body=true, max-size=0, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xiaoxiongyouhao.js
 
 [MITM]
-hostname = www.xiaoxiongyouhao.com
+hostname = %APPEND% www.xiaoxiongyouhao.com

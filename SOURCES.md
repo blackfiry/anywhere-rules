@@ -14,6 +14,7 @@
 | yuredirect.amod（Yu9191链接重定向） | https://raw.githubusercontent.com/ios151/Rewrite/main/YuRedirect.sgmodule |
 | goodnotes6.amod（Goodnotes6） | 用户直接提供配置，无上游链接 |
 | weidian_remove_ads.amod（微店去广告） | https://kelee.one/Tool/Loon/Lpx/Weidian_remove_ads.lpx（Cloudflare 防护，源码转存 lpx/Weidian_remove_ads.lpx） |
+| fleamarket_remove_ads.amod（闲鱼去广告） | https://kelee.one/Tool/Loon/Lpx/FleaMarket_remove_ads.lpx（Cloudflare 防护，源码转存 lpx/FleaMarket_remove_ads.lpx） |
 
 ## 动态订阅（转换器实时转换）
 

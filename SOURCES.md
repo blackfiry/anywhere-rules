@@ -16,6 +16,7 @@
 | weidian_remove_ads.amod（微店去广告） | https://kelee.one/Tool/Loon/Lpx/Weidian_remove_ads.lpx（Cloudflare 防护，源码转存 lpx/Weidian_remove_ads.lpx） |
 | fleamarket_remove_ads.amod（闲鱼去广告） | https://kelee.one/Tool/Loon/Lpx/FleaMarket_remove_ads.lpx（Cloudflare 防护，源码转存 lpx/FleaMarket_remove_ads.lpx） |
 | taobao_remove_ads.amod（淘宝去广告） | https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx（Cloudflare 防护，源码转存 lpx/Taobao_remove_ads.lpx） |
+| jd_remove_ads.amod（京东去广告） | https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx（Cloudflare 防护，源码转存 lpx/JD_remove_ads.lpx） |
 
 ## 动态订阅（转换器实时转换）
 

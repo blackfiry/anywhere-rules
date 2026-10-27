@@ -17,7 +17,7 @@
 | fleamarket_remove_ads.amod（闲鱼去广告） | https://kelee.one/Tool/Loon/Lpx/FleaMarket_remove_ads.lpx（Cloudflare 防护，源码转存 lpx/FleaMarket_remove_ads.lpx） |
 | taobao_remove_ads.amod（淘宝去广告） | https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx（Cloudflare 防护，源码转存 lpx/Taobao_remove_ads.lpx） |
 | jd_remove_ads.amod（京东去广告） | https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx（Cloudflare 防护，源码转存 lpx/JD_remove_ads.lpx） |
-| kanlixiang.amod（看理想 APP端 VIP解锁 + 去广告） | https://raw.githubusercontent.com/Aioneas/Surge/main/Module/kanlixiang.app.sgmodule（视频兼容脚本钉在 commit 8918cca，会员页脚本钉在 commit b29d585，其余走 main 分支） |
+| kanlixiang.amod（看理想 APP端 VIP解锁 + 去广告） | https://raw.githubusercontent.com/Aioneas/Surge/main/Module/kanlixiang.app.sgmodule（视频兼容脚本钉在 commit 8918cca，会员页脚本钉在 commit b29d585，其余走 main 分支；视频脚本前加了一段 Anywhere 兼容垫片（$persistentStore/$httpClient 缺失时兜底），上游原文存 sgmodules/klx_app_video_compat.js） |
 
 ## 动态订阅（转换器实时转换）
 

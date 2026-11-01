@@ -1,0 +1,47 @@
+#!name=YouTube 增强
+
+#!desc=去除油管广告 支持后台播放 画中画
+
+#!arguments=blockUpload:true,blockShorts:true,autoHd:true,blockGames:true,blockVerticalLive:true,jumpAhead:true,blockStore:true,nativeDownload:true
+
+#!arguments-desc=blockUpload\n └ 隐藏「上传」入口\nblockShorts\n └ 隐藏「Shorts」入口\nautoHd\n └ 自动最高画质\nblockGames\n └ 隐藏小游戏推荐\nblockVerticalLive\n └ 隐藏竖屏直播推荐\njumpAhead\n └ 启用 Jump Ahead\nblockStore\n └ 隐藏商店和购物板块\nnativeDownload\n └ 原生下载（实验性）
+
+#!requirement=SYSTEM = 'iOS'
+
+[Script]
+
+youtube.enhance.ad-break = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player\/ad_break(?:\?.*)?$,engine=jsc,script-path=https://raw.githubusercontent.com/IBL3ND/js/refs/heads/main/youtube-request.js
+
+youtube.enhance.download = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/offline\/get_download_action(?:\?.*)?$,requires-body=1,max-size=-1,binary-body-mode=1,engine=webview,script-path=https://raw.githubusercontent.com/IBL3ND/js/refs/heads/main/youtube-response.js,argument="{"nativeDownload":{{{nativeDownload}}}}"
+
+youtube.enhance.download-player = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player(?:\?.*)?$,requires-body=1,max-size=-1,binary-body-mode=1,engine=jsc,script-path=https://raw.githubusercontent.com/IBL3ND/js/refs/heads/main/youtube-request.js,argument="{"nativeDownload":{{{nativeDownload}}}}"
+
+youtube.enhance.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(?:navigation\/resolve_url|browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch|log_event|config)(?:\?.*)?$,requires-body=1,max-size=-1,binary-body-mode=1,engine=webview,script-path=https://raw.githubusercontent.com/IBL3ND/js/refs/heads/main/youtube-response.js,argument="{"blockUpload":{{{blockUpload}}},"blockShorts":{{{blockShorts}}},"blockGames":{{{blockGames}}},"blockVerticalLive":{{{blockVerticalLive}}},"jumpAhead":{{{jumpAhead}}},"autoHd":{{{autoHd}}},"blockStore":{{{blockStore}}}}"
+
+youtube.enhance.ump = type=http-response,pattern=^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback(?:\?.*)?$,requires-body=1,max-size=-1,binary-body-mode=1,engine=webview,script-path=https://raw.githubusercontent.com/IBL3ND/js/refs/heads/main/youtube-response.js,argument="{"blockGames":{{{blockGames}}},"blockVerticalLive":{{{blockVerticalLive}}},"jumpAhead":{{{jumpAhead}}},"autoHd":{{{autoHd}}},"blockStore":{{{blockStore}}}}"
+
+youtube.enhance.init = type=http-request,pattern=^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback(?:\?.*)?$,requires-body=1,max-size=-1,binary-body-mode=1,engine=jsc,script-path=https://raw.githubusercontent.com/IBL3ND/js/refs/heads/main/youtube-request.js
+
+youtube.enhance.auto-hd = type=http-request,pattern=^https?:\/\/[\w-]+\.googlevideo\.com\/videoplayback,requires-body=1,max-size=-1,binary-body-mode=1,engine=jsc,script-path=https://raw.githubusercontent.com/IBL3ND/js/refs/heads/main/youtube-request.js,argument="{"autoHd":{{{autoHd}}}}"
+
+youtube.enhance.log-event = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/log_event,requires-body=1,max-size=-1,binary-body-mode=1,engine=jsc,script-path=https://raw.githubusercontent.com/IBL3ND/js/refs/heads/main/youtube-request.js
+
+youtube.enhance.dual-subs = type=http-response,pattern=^https://(?:www|m)\.youtube\.com/api/timedtext(?:\?|$),requires-body=1,max-size=-1,engine=jsc,script-path=https://raw.githubusercontent.com/IBL3ND/js/refs/heads/main/YT-CC-ASR-Auto.js
+
+[URL Rewrite]
+
+^https:\/\/www\.youtube\.com\/(pagead|pcs)\/ - reject
+
+^https:\/\/s\.youtube\.com\/api\/stats\/ads - reject
+
+^https://((?:www|m)\.youtube\.com/api/timedtext\?)([^#]+)&tlang=([^&#]+)&([^#]*)(#.*)?$ https://$1$2&$4&subtype=Translate$5 302
+
+^https://((?:www|m)\.youtube\.com/api/timedtext\?)([^#]+)&tlang=([^&#]+)(#.*)?$ https://$1$2&subtype=Translate$4 302
+
+^https://((?:www|m)\.youtube\.com/api/timedtext\?)tlang=([^&#]+)&([^#]*)(#.*)?$ https://$1$3&subtype=Translate$4 302
+
+^https://((?:www|m)\.youtube\.com/api/timedtext\?)tlang=([^&#]+)(#.*)?$ https://$1subtype=Translate$3 302
+
+[MITM]
+
+hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com, www.youtube.com, m.youtube.com, s.youtube.com

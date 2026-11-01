@@ -39,6 +39,12 @@
 | kanlixiang-vip.amrs（看理想VIP解锁） | https://raw.githubusercontent.com/ios151/Rewrite/refs/heads/main/klx.sgmodule |
 | camscanner.amrs（扫描全能王） | https://yfamilys.com/module/camscanner.sgmodule |
 
+## Surge 模块（sgmodules/）
+
+| 模块 | 上游源地址 |
+|------|-----------|
+| youtube-enhance-ibl3nd.sgmodule（YouTube 增强：去广告/后台播放/画中画/原生下载/双语字幕，由 IBL3ND 的 Egern 配置转换） | https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Egern-YouTube.yaml |
+
 ## 分流规则（routing/）
 
 | 规则集 | 上游源地址 |

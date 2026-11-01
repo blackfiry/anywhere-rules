@@ -54,6 +54,9 @@
 | Direct-Domains-1.arrs（直连域名 1，100,000 条域名后缀规则） | https://raw.githubusercontent.com/lovebaba1069/anywhere-direct-rules/main/rules/Direct-Domains-1.arrs |
 | Direct-Domains-2.arrs（直连域名 2，12,213 条域名后缀规则） | https://raw.githubusercontent.com/lovebaba1069/anywhere-direct-rules/main/rules/Direct-Domains-2.arrs |
 | Direct-IP.arrs（直连 IP 网段，10,048 条 IP 段规则） | https://raw.githubusercontent.com/lovebaba1069/anywhere-direct-rules/main/rules/Direct-IP.arrs |
+| Direct-Domains-1-clash.yaml | 由仓库内 routing/Direct-Domains-1.arrs 转换（DOMAIN-SUFFIX，100,000 条），无上游 |
+| Direct-Domains-2-clash.yaml | 由仓库内 routing/Direct-Domains-2.arrs 转换（DOMAIN-SUFFIX，12,213 条），无上游 |
+| Direct-IP-clash.yaml | 由仓库内 routing/Direct-IP.arrs 转换（IP-CIDR 6,552 条 + IP-CIDR6 3,496 条），无上游 |
 
 ## 源地址未知的
 

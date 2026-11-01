@@ -51,6 +51,9 @@
 |--------|-----------|
 | apple-ai-clash.yaml | https://raw.githubusercontent.com/RocM301/Apple-Rule/refs/heads/main/Apple-AI.list |
 | gemini-clash.yaml | 由仓库内 routing/gemini.arrs 转换，无上游 |
+| Direct-Domains-1.arrs（直连域名 1，100,000 条域名后缀规则） | https://raw.githubusercontent.com/lovebaba1069/anywhere-direct-rules/main/rules/Direct-Domains-1.arrs |
+| Direct-Domains-2.arrs（直连域名 2，12,213 条域名后缀规则） | https://raw.githubusercontent.com/lovebaba1069/anywhere-direct-rules/main/rules/Direct-Domains-2.arrs |
+| Direct-IP.arrs（直连 IP 网段，10,048 条 IP 段规则） | https://raw.githubusercontent.com/lovebaba1069/anywhere-direct-rules/main/rules/Direct-IP.arrs |
 
 ## 源地址未知的
 

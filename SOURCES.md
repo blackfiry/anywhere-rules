@@ -39,12 +39,6 @@
 | kanlixiang-vip.amrs（看理想VIP解锁） | https://raw.githubusercontent.com/ios151/Rewrite/refs/heads/main/klx.sgmodule |
 | camscanner.amrs（扫描全能王） | https://yfamilys.com/module/camscanner.sgmodule |
 
-## Surge 模块（sgmodules/）
-
-| 模块 | 上游源地址 |
-|------|-----------|
-| youtube-enhance.sgmodule（YouTube Enhance：去广告/后台播放/画中画/4倍速） | https://github.com/gholts/surge/blob/main/modules/youtube-enhance.sgmodule（订阅地址：https://raw.githubusercontent.com/gholts/surge/main/modules/youtube-enhance.sgmodule） |
-
 ## 分流规则（routing/）
 
 | 规则集 | 上游源地址 |

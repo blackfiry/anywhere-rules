@@ -57,6 +57,9 @@
 | Direct-Domains-1-clash.yaml | 由仓库内 routing/Direct-Domains-1.arrs 转换（DOMAIN-SUFFIX，100,000 条），无上游 |
 | Direct-Domains-2-clash.yaml | 由仓库内 routing/Direct-Domains-2.arrs 转换（DOMAIN-SUFFIX，12,213 条），无上游 |
 | Direct-IP-clash.yaml | 由仓库内 routing/Direct-IP.arrs 转换（IP-CIDR 6,552 条 + IP-CIDR6 3,496 条），无上游 |
+| Direct-Domains-1.mrs | 由仓库内 routing/Direct-Domains-1.arrs 经 Mihomo convert-ruleset 转制（domain，100,000 条），仅 Mihomo 内核可用 |
+| Direct-Domains-2.mrs | 由仓库内 routing/Direct-Domains-2.arrs 经 Mihomo convert-ruleset 转制（domain，12,213 条），仅 Mihomo 内核可用 |
+| Direct-IP.mrs | 由仓库内 routing/Direct-IP.arrs 经 Mihomo convert-ruleset 转制（ipcidr，10,048 条去重后存 10,012 条，36 条被更大网段覆盖属冗余），仅 Mihomo 内核可用 |
 
 ## 源地址未知的
 

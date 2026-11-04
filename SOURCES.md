@@ -62,6 +62,9 @@
 | Direct-Domains-2.mrs | 由仓库内 routing/Direct-Domains-2.arrs 经 Mihomo convert-ruleset 转制（domain，12,213 条），仅 Mihomo 内核可用 |
 | Direct-IP.mrs | 由仓库内 routing/Direct-IP.arrs 经 Mihomo convert-ruleset 转制（ipcidr，10,048 条去重后存 10,012 条，36 条被更大网段覆盖属冗余），仅 Mihomo 内核可用 |
 | adblock.arrs（去广告，247,339 条域名后缀规则） | 由 https://github.com/217heidai/adblockfilters/releases/download/rule/adblockmihomo.mrs 经 Mihomo convert-ruleset 解码后转制（domain，247,339 条） |
+| adblock-1.arrs（去广告 1，100,000 条域名后缀规则） | 由仓库内 routing/adblock.arrs 拆分（第 1 部分） |
+| adblock-2.arrs（去广告 2，100,000 条域名后缀规则） | 由仓库内 routing/adblock.arrs 拆分（第 2 部分） |
+| adblock-3.arrs（去广告 3，47,339 条域名后缀规则） | 由仓库内 routing/adblock.arrs 拆分（第 3 部分） |
 
 ## 源地址未知的
 

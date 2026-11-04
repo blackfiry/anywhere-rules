@@ -45,6 +45,12 @@
 |------|-----------|
 | youtube-enhance-ibl3nd.sgmodule（YouTube 增强：去广告/后台播放/画中画/原生下载/双语字幕，由 IBL3ND 的 Egern 配置转换） | https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/Egern-YouTube.yaml |
 
+## Loon 插件（lpx/）
+
+| 模块 | 上游源地址 |
+|------|-----------|
+| kanlixiang.lpx（看理想 APP端 VIP解锁 + 去广告，Loon 插件） | 由 https://raw.githubusercontent.com/Aioneas/Surge/main/Module/kanlixiang.app.sgmodule 转写（[Map Local] → [Rewrite] mock-response-body，[Script] 原文照搬，[MITM] 去 %APPEND%） |
+
 ## 分流规则（routing/）
 
 | 规则集 | 上游源地址 |

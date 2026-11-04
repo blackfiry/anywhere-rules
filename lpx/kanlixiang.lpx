@@ -1,0 +1,42 @@
+#!name=看理想 APP端 VIP解锁 + 去广告
+#!desc=看理想 App：去开屏广告/推广/弹窗、VIP与目录处理、音频及下载链路修正；新增原生视频直接播放、选集切换和进度拖动；会员页与资料页净化。
+#!author=baby + Aioneas
+#!homepage=https://github.com/Aioneas/Surge
+#!icon=https://raw.githubusercontent.com/Aioneas/Surge/main/Icon/kanlixiang.png
+
+# 由 Surge 模块 kanlixiang.app.sgmodule 转写为 Loon 插件
+# 转写说明：
+# - [Script] 7 条原文照搬，Surge 写法 Loon 直接兼容
+# - [Map Local] 2 条 → [Rewrite] mock-response-body（base64 原样保留，避开 JSON 引号转义问题）
+# - [MITM] 去掉 Surge 的 %APPEND%，Loon 里直接列域名
+
+[Rewrite]
+# 开屏广告 → 返回空广告列表 {"status":"success","data":[]}
+^https?://api\.vistopia\.com\.cn/api/v2/home/advertisement(\?|$) mock-response-body data-type=json data="eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6W119" mock-data-is-base64=true status-code=200
+# 开屏弹窗 → 404 {"status":"error","data":null}，App 收到错误后跳过弹窗容器
+^https?://api\.vistopia\.com\.cn/api/v2/other/pop-up(\?|$) mock-response-body data-type=json data="eyJzdGF0dXMiOiJlcnJvciIsImRhdGEiOm51bGx9" mock-data-is-base64=true status-code=404
+
+[Script]
+# 首页信息流：移除商品广告卡片、新人会员推广及商品轮播，保留内容推荐
+看理想去首页推广 = type=http-response, pattern=^https?:\/\/api\.vistopia\.com\.cn\/api\/v2\/home\/header-new(\?|$), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Aioneas/Surge/main/Script/klx_no_ads.js
+
+# 全局配置：清除 advertisements[] / dialog（保留 app_config 等正常字段）
+看理想去广告配置 = type=http-response, pattern=^https?:\/\/api\.vistopia\.com\.cn\/api\/v2\/other\/config(\?|$), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Aioneas/Surge/main/Script/klx_no_ads.js
+
+# VIP 与视频播放兼容；非视频请求沿用原 VIP 脚本
+看理想VIP解锁 = type=http-response, pattern=^https?:\/\/api\.vistopia\.com\.cn\/api\/v2\/(reader\/(section-detail|detail)|user\/home|vip\/buy-list|services\/play-token(?!\?library_article_id=)), requires-body=1, max-size=0, timeout=15, script-path=https://raw.githubusercontent.com/Aioneas/Surge/8918cca082e16cf42f7b72cd52f20e036724e719/Script/klx_app_video_compat.js
+
+# 会员购买 H5：隐藏顶部套餐购买区、权益对比和底部购买栏，保留节目畅享等权益内容
+看理想会员页去购买区 = type=http-response, pattern=^https?:\/\/shop\.vistopia\.com\.cn\/vip_rights(?:\?|$), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Aioneas/Surge/b29d585e7953968337272a9e0f74a83676602e56/Script/klx_vip_page_hide_purchase.js
+
+# APP 下载链路：补齐下载入队依赖的 content 元数据和批量播放凭证
+看理想下载链路修正 = type=http-response, pattern=^https?:\/\/api\.vistopia\.com\.cn\/api\/v2\/(services\/articles-play-token(\?|$)|content\/batch(\?|$)), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Aioneas/Surge/main/Script/klx_app_download_unlock.js?v=20260814g
+
+# 节目目录页：修正原生目录锁态，尽量让已解锁章节直接可点播
+看理想目录解锁 = type=http-response, pattern=^https?:\/\/api\.vistopia\.com\.cn\/api\/v2\/content\/(content-show\/\d+|article_list(\?|$)), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Aioneas/Surge/main/Script/klx_app_catalog_unlock.js
+
+# 资料页去推广昵称
+看理想去推广昵称 = type=http-response, pattern=^https?:\/\/api\.vistopia\.com\.cn\/api\/v2\/user\/profile(\?|$), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Aioneas/Surge/main/Script/klx_profile_clean.js
+
+[MITM]
+hostname = api.vistopia.com.cn, shop.vistopia.com.cn

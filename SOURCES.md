@@ -71,6 +71,7 @@
 | adblock-1.arrs（去广告 1，100,000 条域名后缀规则） | 由仓库内 routing/adblock.arrs 拆分（第 1 部分） |
 | adblock-2.arrs（去广告 2，100,000 条域名后缀规则） | 由仓库内 routing/adblock.arrs 拆分（第 2 部分） |
 | adblock-3.arrs（去广告 3，47,339 条域名后缀规则） | 由仓库内 routing/adblock.arrs 拆分（第 3 部分） |
+| ios-noir.arrs（iOS-NOIR 隐私防护，75 条域名后缀规则） | 由 https://github.com/arnold117/iOS-NOIR/blob/main/shields/ios_noir_shield.module 转换（DOMAIN-SUFFIX，75 条），策略 REJECT |
 
 ## 源地址未知的
 

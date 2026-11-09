@@ -1,0 +1,22 @@
+name = Apple 隐私中继
+routing = 0
+2, apple-relay.akamaized.net
+2, guzzoni.apple.com
+2, api-siri-prod.apple.com
+2, mask-api.fe.apple-dns.net
+2, mask-api.icloud.com
+2, mask-t.apple-dns.net
+2, mask.apple-dns.net
+2, smoot.apple.com
+2, apple-relay.apple.com
+2, apple-relay.cloudflare.com
+2, apple-relay.fastly-edge.com
+2, apple-relay.mask.apple-dns.net
+2, cp4.cloudflare.com
+2, gspe1-ssl.ls.apple.com
+2, gateway.icloud.com
+2, ls.apple.com
+2, mask-h2.icloud.com
+2, mask.icloud.com
+2, apps.mzstatic.com
+2, siri.apple.com
